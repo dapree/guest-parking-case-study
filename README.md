@@ -2,13 +2,15 @@
 
 > Case study only. The source code is private and is not in this repository.
 
-**One line:** A guest-parking app for apartment buildings that gets a guest parked without the resident sharing a passcode, and gives everyone one clear rule when a guest space is taken.
+**One line:** A guest-parking app for a 221-unit apartment building that gets a guest parked without the resident sharing a passcode, and gives everyone one clear rule when a guest space is taken. Reserving a guest spot is about 88% faster than on the building's existing system.
 
 ## Problem
 
 At my apartment building in Los Angeles, getting a guest parked means three separate websites, a long form, and the resident's passcode, which the guest only finds out they need at the very end. A space can't be held until you know the guest's license plate. And when a guest arrives to find someone else in the guest space, nobody, not residents, guests or patrol, really knows what to do. The job to be done: *"My friend is coming over. Make sure they have a place to park."*
 
 ## What it does
+
+![Inviting a guest, picking a time and space, and the guest's pass](assets/app-screens.png)
 
 - **Residents** invite a guest with a link, or approve a guest's request with one tap. They pick who and roughly when; the app picks a space and holds it.
 - **Pending invites** in one view, so a resident can see which guests haven't used their invite yet.
@@ -30,7 +32,7 @@ At my apartment building in Los Angeles, getting a guest parked means three sepa
 | Private by default | Guest details never go in web links, and there's no third-party tracking. |
 | Build from the iPhone's own patterns | It feels familiar on a phone without anyone having to learn it. |
 
-**How it was built:** AI wrote most of the code; I wrote specs, reviewed and tested every change. The product calls above were mine.
+**How it was built:** Claude wrote most of the code; I wrote specs, reviewed and tested every change. The product calls above were mine.
 
 ## Evidence
 
@@ -42,6 +44,7 @@ At my apartment building in Los Angeles, getting a guest parked means three sepa
 | Automated tests and browser checks on made-up data, with real passes switched off | Simulated | Caught rule and wording problems before release. |
 | AI code review on every change | AI review | Fixes to edge cases and to sign-in safety. |
 | Feedback from residents using the live version | Human research (resident feedback) | Confirmed the taken-space flow (moving a guest to a free spot when someone is in theirs), and led to a pending-invites view. |
+| Time to reserve a guest spot, timed by me on the building's existing system and on this app | Measured (my own timing, both apps) | About 88% faster to reserve in this app. |
 | A logger of guest-space availability from the building's public data | Measured production | Collecting; no results published here. |
 
 ## Status
