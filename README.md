@@ -10,6 +10,14 @@ At my apartment building in Los Angeles, getting a guest parked means three sepa
 
 ## What it does
 
+### Before and after
+
+The building's existing system is a multi-field form across several screens: space, unit, passcode, vehicle, make/model/color, email, phone, and a rules checkbox. The resident's passcode is required.
+
+![The building's existing guest-parking system](assets/legacy-screens.png)
+
+In this app, reserving a guest spot is about 88% faster. I timed both.
+
 ![Inviting a guest, picking a time and space, and the guest's pass](assets/app-screens.png)
 
 - **Residents** invite a guest with a link, or approve a guest's request with one tap. They pick who and roughly when; the app picks a space and holds it.
